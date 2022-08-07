@@ -1,0 +1,266 @@
+<!-- Разметка портфолио -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    
+    <body>
+
+        <!-- Шапка -->
+        <header class="page-header">
+            <div class="container page-header-container">
+                <nav class="page-nav">
+                    <a class="logo header-logo link" href="./index.html" lang="en">
+                        <span class="span">Web</span>Studio
+                    </a>
+                    <ul class="menu list">
+                        <li class="menu-item">
+                            <a class="menu-link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link link current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contact-list list">
+                    <li class="header-contact-list-item">
+                        <a class="header-contact-link link" href="mailto:info@devstudio.com">
+                            <svg class="header-contact-logo" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-contact-list-item">
+                        <a class="header-contact-link link" href="tel:+380961111111">
+                            <svg class="header-contact-logo" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +380 96 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Уникальный контент -->
+        <main>
+            <section class="portfolio">
+                <div class="container portfolio-container">
+                    <h1 class="porfolio-title" hidden>Наши работы</h1>
+                    <ul class="filter-list list">
+                        <li class="filter-list-item">
+                            <button class="button portfolio-btn" type="button">Все</button>
+                        </li>
+                        <li class="filter-list-item">
+                            <button class="button portfolio-btn" type="button">Веб-сайты</button>
+                        </li>
+                        <li class="filter-list-item">
+                            <button class="button portfolio-btn" type="button">Приложения</button>
+                        </li>
+                        <li class="filter-list-item">
+                            <button class="button portfolio-btn" type="button">Дизайн</button>
+                        </li>
+                        <li class="filter-list-item">
+                            <button class="button portfolio-btn" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                    <ul class="img-list list">
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/workers.jpg" alt="Сотрудники" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Технокряк</h2>
+                                    <p class="text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/poster.jpg" alt="Постер" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                                    <p class="text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/restaurant-logo.jpg" alt="Логотип ресторана" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                               
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="text">Приложение</p>
+                                </div>                           
+                            </a>
+                        </li class="img-list-item">
+                        <li class="img-list-item"> 
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/progect-prime.jpg" alt="Наушники" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                               
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Проект <span lang="en">Prime</span></h2>
+                                    <p class="text">Маркетинг</p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/project-boxes.jpg" alt="Коробки" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                               
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Проект <span lang="en">Boxes</span></h2>
+                                    <p class="text">Приложение</p>
+                                </div>  
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/inspiration-has-no-borders.jpg" alt="Описание преимуществ" width="370"
+                                        height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                               
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title" lang="en">Inspiration has no Borders</h2>
+                                    <p class="text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img src="./images/portfolio/post-limited-edition.jpg" alt="Журнал" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                               
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Издание <span lang="en">Limited Edition</span></h2>
+                                    <p class="text">Дизайн</p>
+                                </div>   
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/project-lab.jpg" alt="Этикетка" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                              
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title">Проект <span lang="en">LAB</span></h2>
+                                    <p class="text">Маркетинг</p>
+                                </div>   
+                            </a>
+                        </li>
+                        <li class="img-list-item">
+                            <a class="card-link link" href="">
+                                <div class="img-envelope-wrapper">
+                                    <img class="img" src="./images/portfolio/project-lab.jpg" alt="Этикетка" width="370" height="294">
+                                    <p class="envelope">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                                        позволит
+                                        посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                                <div class="card-wrapper">
+                                    <h2 class="card-link-title" lang="en">Growing Business</h2>
+                                    <p class="text">Приложение</p>
+                                </div>  
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="page-footer">
+            <div class="container page-footer-container">
+                <div class="logo-adress-wrapper">
+                    <a class="logo footer-logo link" href="./index.html" lang="en"><span class="span">Web</span><span
+                            class="footer-span">Studio</span></a>
+                    <address class="contact-info">
+                        <ul class="footer-contact-list list">
+                            <li class="footer-contact-list-item">
+                                <a class="map link" href="https://goo.gl/maps/jYa3saxuVgHwLRbw7">г. Киев, пр-т Леси Украинки,
+                                    26</a>
+                            </li>
+                            <li class="footer-contact-list-item">
+                                <a class="footer-contact-link link" href="mailto:info@example.com"
+                                    lang="en">info@example.com</a>
+                            </li>
+                            <li class="footer-contact-list-item">
+                                <a class="footer-contact-link link" href="tel:+380991111111">+380 99 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+        
+                <div class="social-list-wrapper">
+                    <b class="call">присоединяйтесь</b>
+                    <ul class="social-list list">
+                        <li class="footer-social-list-item">
+                            <a href="" class="social-list-link footer-social-link">
+                                <svg class="social-list-logo" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="social-list-link footer-social-link">
+                                <svg class="social-list-logo" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="social-list-link footer-social-link">
+                                <svg class="social-list-logo" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a href="" class="social-list-link footer-social-link">
+                                <svg class="social-list-logo" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
