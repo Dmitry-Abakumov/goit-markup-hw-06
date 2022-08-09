@@ -42,19 +42,21 @@ img {
     color: inherit;
 }
 
-.button {
-    border-radius: 4px;
-    border-color: transparent;
+.modal-btn {
+    align-self: center;
 
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-color: transparent;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    background-color:#EEEEEE;
-    font-family: var(--primary-font);
-    font-weight: var(--primary-weight-font);
-    font-size: 16px;
-    line-height: 1.63;
-    /* text-align: center;
-    vertical-align: top; */
-    letter-spacing: 0.03em;
 }
 
 .logo {
@@ -73,6 +75,17 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 /* Шапка */
@@ -503,7 +516,6 @@ background-color: #2F303A;
     margin-bottom: 20px;
 
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -526,6 +538,16 @@ background-color: #2F303A;
 
 /* Оформление фильтра */
 .portfolio-btn {
+    border-radius: 4px;
+    border-color: transparent;
+    
+    cursor: pointer;
+    background-color: #EEEEEE;
+    font-weight: var(--primary-weight-font);
+    line-height: 1.63;
+    /* text-align: center;
+    vertical-align: top; */
+    letter-spacing: 0.03em;
     padding: 6px 22px;
 
     transition: color var(--transition-dur-and-func),
@@ -641,7 +663,16 @@ background-color: #2F303A;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
-    cursor: pointer
+    cursor: pointer;
+}
+
+.modal-close-img {
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-close-btn:focus .modal-close-img,
+.modal-close-btn:hover .modal-close-img {
+    fill: var(--accent-color);
 }
 
 .backdrop {
@@ -669,11 +700,14 @@ background-color: #2F303A;
     top: 50%;
     left: 50%;
 
+    padding: 40px;
     width: 528px;
     height: 581px;
     border-radius: 4px;
 
     background-color: #FFFFFF; 
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-dur-and-func);
@@ -681,4 +715,168 @@ background-color: #2F303A;
 
 .backdrop.is-hidden .modal-window {
     transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* Оформление формы модального окна */
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal-form-call {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--primary-font-color);
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus {
+    border-color: var(--accent-color);
+    outline:none;
+}
+
+.modal-form-textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;;
+}
+
+.modal-form-textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.modal-form-input-desc {
+    display: block;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.input-icon-wrapper {
+    display: block;
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    transition: fill var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus + .form-icon {
+    fill: var(--accent-color)
+}
+
+.modal-form-field {
+    margin-bottom: 10px;
+}
+
+.modal-form-check-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.form-policy-link {
+    color: var(--accent-color)
+}
+
+/* Оформление кастомного чекбокса */
+
+.modal-form-check-desc::before {
+    margin-right: 7px;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--primary-font-color);
+
+    transition: background-color  var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
+}
+
+.modal-form-checkbox:checked + .modal-form-check-desc::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/check-box/check.svg);
+    border-color: var(--accent-color);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+
+/* Оформление формы футера */
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-left: 93px;
+    margin-right: 12px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-footer-btn {
+    display: flex;
+    align-items: center;
+
+    padding-left: 29px;
+}
+
+.footer-send-icon {
+    margin-left: 10px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-form-call {
+    margin-left: 93px;
 }
