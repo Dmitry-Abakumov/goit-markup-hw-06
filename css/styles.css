@@ -728,6 +728,7 @@ background-color: #2F303A;
 .modal-form-call {
     margin-bottom: 12px;
 
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -814,6 +815,7 @@ background-color: #2F303A;
     justify-content: center;
     margin-bottom: 30px;
 
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -855,6 +857,7 @@ background-color: #2F303A;
     padding-left: 16px;
     margin-left: 93px;
     margin-right: 12px;
+    color: #FFFFFF;
 
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
